@@ -1,2 +1,2 @@
-# Julius-Calendar_App
-This is an important change!
+# JPEG_Compressor_Study
+
