@@ -1,4 +1,5 @@
-"""This file is just the library of all the different stock photo images that will be used in the experiment"""
+"""This file is just the library of all the different stock photo images that will be used in the experiment.
+So far, those images are stored locally but I will change that as soon as possible."""
 
 from PIL import Image
 import PIL

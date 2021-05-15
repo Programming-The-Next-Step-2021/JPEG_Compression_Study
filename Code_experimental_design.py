@@ -1,5 +1,6 @@
 """This package contains the code for the experimental design. It includes all trials step by step.
-It only works if you combine it with the contents of the compression-code.py package (some of which are imported into this package)."""
+It only works if you combine it with the contents of the compression-code.py package (some of which are imported into this package).
+Also it is connected to the Stock files library, which contains all important images."""
 from psychopy import visual, core, event
 from PIL import Image
 import PIL
@@ -12,7 +13,7 @@ import Compression_code
 
 #Create a window
 mywin = visual.Window([1200,900], monitor = "testMonitor", units = "deg")
-""" This is the window in which the entire experiment will take place """
+""" This is the window in which the entire experiment will take place. """
 #help(mywin)
 #Create stimulus
 
