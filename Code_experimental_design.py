@@ -2,6 +2,8 @@
 It only works if you combine it with the contents of the compression-code.py package (some of which are imported into this package).
 Also it is connected to the Stock files library, which contains all important images."""
 from psychopy import visual, core, event
+from psychopy.hardware.keyboard import Keyboard
+from psychopy.core import Clock, wait
 from PIL import Image
 import PIL
 import os
@@ -10,6 +12,9 @@ import random
 
 from Stock_files_library import image_list
 import Compression_code
+
+#General issues
+clock = Clock()
 
 #Create a window
 mywin = visual.Window([1200,900], monitor = "testMonitor", units = "deg")
