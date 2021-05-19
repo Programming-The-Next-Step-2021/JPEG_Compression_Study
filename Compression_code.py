@@ -13,19 +13,23 @@ from Stock_files_library import image_list
 
 dir(Image)
 #print(dir(Image))
+def compression_trial():
+    im = Image.open(random.choice(image_list))
+    im.save("Compressed_image.jpg", optimize = True, quality=1)
+    im.show()
+    im2 = Image.open("Compressed_image.jpg")
+    im2.show()
+    print(im.size)  
+    print(im2.size)
 
-im = Image.open(random.choice(image_list))
-#print(f"The image size dimensions are: {im.size}")
+for i in range(3):
+    compression_trial()
+
+"""This line of code compresses the JPEGs to 1% quality. More details will follow.
+So far this is pretty random opening of images in full and in extremely reduced quality.
+I still have to figure out, how I can add the reduced images to my experimental design."""
 
 
-file_name = "image-1-compressed.jpg"
-dim = im.size
-#print(f"this is the current size of the picture: {dim}")
-
-#im.save("Compressed_"+file_name, optimize = True, quality=30)
-"""This line of code compresses the JPEGs to 30% quality. More details will follow"""
-
-im2 = Image.open("Compressed_image-1-compressed.jpg")
 
 
 
