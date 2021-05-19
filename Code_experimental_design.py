@@ -77,7 +77,7 @@ Press "j" for the right picture.""", pos = [0, 10], color = (1.0, 1.0))
         elif "j" in keys:
             break
 
-for i in range(20):
+for i in range(4):
     trial()
     
 mywin.close()
