@@ -21,7 +21,10 @@ image_8 = "/Users/juliusmaerz/Documents/GitHub/Julius-Calendar_App/Stock_images/
 image_9 = "/Users/juliusmaerz/Documents/GitHub/Julius-Calendar_App/Stock_images/Image_9.jpg"
 image_10 = "/Users/juliusmaerz/Documents/GitHub/Julius-Calendar_App/Stock_images/Image_10.jpg"
 
-image_list = [image_1, image_2, image_3,image_4,image_5,image_6,image_7,image_8,image_9,image_10]
+image_list = [image_1, image_2, image_3,image_4,image_5,
+              image_6,image_7,image_8,image_9,image_10]
+
+# LISTE ERSTELLEN MIT NUR COMPRIMIERTEN BILDERN!
 
 
 #im = Image.open(random.choice(image_list))
