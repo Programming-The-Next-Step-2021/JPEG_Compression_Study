@@ -11,7 +11,7 @@ import glob
 import random
 
 from Stock_files_library import image_list
-import Compression_code
+from Compression_code import compression_trial, compressed_images, full_images
 
 #General issues
 clock = Clock()
@@ -57,28 +57,33 @@ while True:
         if "space" in keys:
             break
 
-#Trials                       
+#Trials
+global im
 def trial():
-    picture_1 = random.choice(image_list)
-    picture_2 = random.choice(image_list)
-    left = visual.ImageStim(win=mywin,image= picture_1,size = (16, 12),pos=[-9,0],texRes = 1280,interpolate = True)
-    right = visual.ImageStim(win=mywin,image= picture_1,size = (16, 12), pos=[9,0], texRes = 12)
-    instruction = visual.TextStim(win = mywin, text = """Which picture is in lower resolution?
+    for i in range(12):
+            fixation = visual.TextStim(win = mywin, text = "+")
+            picture_1 = full_images[i]
+            picture_2 = compressed_images[i]
+            left = visual.ImageStim(win=mywin,image= picture_1,size = (16, 12),pos=[-9,0],texRes = 1280,interpolate = True)
+            right = visual.ImageStim(win=mywin,image= picture_2,size = (16, 12), pos=[9,0], texRes = 12)
+            instruction = visual.TextStim(win = mywin, text = """Which picture is in lower resolution?
 Press "f" for the left picture.
 Press "j" for the right picture.""", pos = [0, 10], color = (1.0, 1.0))
-    left.draw()
-    right.draw()
-    instruction.draw()
-    mywin.flip()
-    while True:
-        keys = kb.getKeys()
-        if "f" in keys:
-            break
-        elif "j" in keys:
-            break
+            fixation.draw()
+            mywin.flip()
+            core.wait(1)
+            left.draw()
+            right.draw()
+            instruction.draw()
+            mywin.flip()
+            while True:
+                keys = kb.getKeys()
+                if "f" in keys:
+                    break
+                elif "j" in keys:
+                    break
 
-for i in range(4):
-    trial()
+trial()
     
 mywin.close()
 core.quit()

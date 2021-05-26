@@ -11,7 +11,7 @@ from Stock_files_library import image_list
 from io import BytesIO
 
 def generate(self, image, format='jpeg'):
-    im = random.choice(image_list)
+    im = self.generate_image(image)
     out = BytesIO()
     im.save(out, format=format,quality=75)
     out.seek(0)
