@@ -15,16 +15,16 @@ from psychopy import visual, core, event
 Each of the image_1 to image_10 objects stores a jpg file.
 The image_list list consists of all the just created images and can be accessed by both the Code_experimental_design.py and the Compression_code.py file"""
 
-image_1 = "/Users/juliusmaerz/Documents/GitHub/Julius-Calendar_App/Stock_images/Image_1.jpg"
-image_2 = "/Users/juliusmaerz/Documents/GitHub/Julius-Calendar_App/Stock_images/Image_2.jpg"
-image_3 = "/Users/juliusmaerz/Documents/GitHub/Julius-Calendar_App/Stock_images/Image_3.jpg"
-image_4 = "/Users/juliusmaerz/Documents/GitHub/Julius-Calendar_App/Stock_images/Image_4.jpg"
-image_5 = "/Users/juliusmaerz/Documents/GitHub/Julius-Calendar_App/Stock_images/Image_5.jpg"
-image_6 = "/Users/juliusmaerz/Documents/GitHub/Julius-Calendar_App/Stock_images/Image_6.jpg"
-image_7 = "/Users/juliusmaerz/Documents/GitHub/Julius-Calendar_App/Stock_images/Image_7.jpg"
-image_8 = "/Users/juliusmaerz/Documents/GitHub/Julius-Calendar_App/Stock_images/Image_8.jpg"
-image_9 = "/Users/juliusmaerz/Documents/GitHub/Julius-Calendar_App/Stock_images/Image_9.jpg"
-image_10 = "/Users/juliusmaerz/Documents/GitHub/Julius-Calendar_App/Stock_images/Image_10.jpg"
+image_1 = "./Stock_images/Image_1.jpg"
+image_2 = "./Stock_images/Image_2.jpg"
+image_3 = "./Stock_images/Image_3.jpg"
+image_4 = "./Stock_images/Image_4.jpg"
+image_5 = "./Stock_images/Image_5.jpg"
+image_6 = "./Stock_images/Image_6.jpg"
+image_7 = "./Stock_images/Image_7.jpg"
+image_8 = "./Stock_images/Image_8.jpg"
+image_9 = "./Stock_images/Image_9.jpg"
+image_10 = "./Stock_images/Image_10.jpg"
 
 image_list = [image_1, image_2, image_3,image_4,image_5,
               image_6,image_7,image_8,image_9,image_10]
