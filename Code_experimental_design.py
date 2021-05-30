@@ -28,7 +28,7 @@ The results object creates an excel sheet where all the different data is going 
 
 clock = Clock()
 kb = Keyboard()
-results = pd.read_excel("/Users/juliusmaerz/Documents/GitHub/Julius-Calendar_App/Experimental_data.xlsx")
+results = pd.read_excel("./Experimental_data.xlsx")
 
 
 #Dialogue window
@@ -200,7 +200,7 @@ Press "j" for the RIGHT picture.""", pos = [0, 10], color = (1.0, 1.0))
             correct_image.append(picture_2)
             datasheet = pd.DataFrame(list(zip(reaction_times, correct_image, correct_key, given_response, picture_sizes)),
                columns =['RT', 'Correct image', "Correct Response", "Given Response", "resolution"])
-            datasheet.to_excel(excel_writer = "/Users/juliusmaerz/Documents/GitHub/Julius-Calendar_App/Experimental_data.xlsx",
+            datasheet.to_excel(excel_writer = "./Experimental_data.xlsx",
                      index = False)
 
 
@@ -235,6 +235,4 @@ mywin.close()
 core.quit()
 
 
-#EVTL: if list of compressed images == 9: correct key = j
-#if list of compressed images = -9: correct key = f
 
