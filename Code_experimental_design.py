@@ -31,13 +31,6 @@ kb = Keyboard()
 results = pd.read_excel("/Users/juliusmaerz/Documents/GitHub/Julius-Calendar_App/Experimental_data.xlsx")
 
 
-#Create a window
-""" In this part, I create the window in which the entire experiment will take place.
-The mywin object is a very basic window without many details."""
-
-mywin = visual.Window([1200,900], monitor = "testMonitor", units = "deg")
-
-
 #Dialogue window
 """In this part, I create a dialogue window that opens up at the beginning of the experiment.
 The exp_info object asks for the participants initials, as well as for the last two letters of his mothers first name.
@@ -50,6 +43,12 @@ dlg = DlgFromDict(exp_info)
 if not dlg.OK:
     print("Alright then, keep your secrets!")
     quit()
+
+#Create a window
+""" In this part, I create the window in which the entire experiment will take place.
+The mywin object is a very basic window without many details."""
+
+mywin = visual.Window([1200,900], monitor = "testMonitor", units = "deg")
 
 
 #Introduction text
