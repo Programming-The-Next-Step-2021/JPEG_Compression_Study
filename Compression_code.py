@@ -34,7 +34,7 @@ The im2 object opens the just saved Full_image.jpg of the current trial.
 The im2.save function compresses the picture to a random quality between 10 and 90% (represented by the resolution list) and stores
 the new image as "Compressed_image.jpg" with the number of the current trial added into it."""
 
-path = "/Users/juliusmaerz/Documents/GitHub/Julius-Calendar_App/Images"
+path = "./Images"
 def compression_trial():
     #resolutions = []
     for i in range(50):
