@@ -133,7 +133,7 @@ def trial():
         The compressed object makes picture_2 appear on the screen. The "pos" argument ensures that it appears either on the left or the right side of the screen.
         The instruction object makes a text appear above the two stimuli, which gives the instruction to press the corresponding key for the LOWER resolution image"""
     
-    for i in range(50):
+    for i in range(5):
             position_1 = [-9,9,9,9,-9,9,-9,9,-9,9,-9,-9,9,9,9,9,-9,9,-9,9,-9,9,-9,-9,-9,9,-9,9,-9,9,-9,9,9,-9,-9,9,-9,9,-9,9,-9,9,-9,9,9,-9,-9,-9,-9,9]
             position_2 = [9,-9,-9,-9,9,-9,9,-9,9,-9,9,9,-9,-9,-9,-9,9,-9,9,-9,9,-9,9,9,9,-9,9,-9,9,-9,9,-9,-9,9,9,-9,9,-9,9,-9,9,-9,9,-9,-9,9,9,9,9,-9]
             fixation = visual.TextStim(win = mywin, text = "+")
